@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario completo con campos agrupados</title>
+</head>
+<body>
+    
+    <form action="GET" target="">
+
+        <h1>Revista Abierta</h1><br><br>
+
+        <fieldset>
+
+            <legend>Datos Personales</legend><br>
+
+            <label for="nom">Nom: </label>
+            <input type="text" name="nom" id="nom">
+
+            <label for="ape1">Primer apellido: </label>
+            <input type="text" name="ape1" id="ape1">
+
+            <label for="ape2">Segundo apellido: </label>
+            <input type="text" name="ape2" id="ape2">
+
+            <br><br>
+
+            <label for="dire">Dirección: </label>
+            <input type="text" name="dire" id="dire">
+            
+            <br><br>
+
+            <label for="mail">e-mail: </label>
+            <input type="mail" name="mail" id="mail">
+
+            <br><br>
+
+            <label for="pass">Contraseña: </label>
+            <input type="password" name="pass" id="pass">
+
+            <br><br>
+
+            <label for="sex">Sexo: </label><br><br>
+            <input type="radio" name="sex" id="sex1">Mujombre<br>
+            <input type="radio" name="sex" id="sex2">Marimacho<br><br>
+
+        </fieldset>
+        
+        <br><br>
+        
+        <fieldset>
+
+            <legend>Nivell de estudios e intereses</legend><br>
+
+            <label for="nivel">Nivel de estudios</label><br><br>
+            <input type="radio" name="nivel" id="nivel1">Certificado escolar<br>
+            <input type="radio" name="nivel" id="nivel2">Graduado en ESO<br>
+            <input type="radio" name="nivel" id="nivel3">Bachiller<br>
+            <input type="radio" name="nivel" id="nivel4">Diplomado<br>
+            <input type="radio" name="nivel" id="nivel5">Licenciado/Doctorado<br><br>
+            
+            <label for="art">Recibir artículos sobre los siguientes temas: </label><br><br>
+            <input type="checkbox" name="art" id="art1" value="1">Música <br>
+            <input type="checkbox" name="art" id="art2" value="2">Deportes <br>
+            <input type="checkbox" name="art" id="art3" value="3">Cine <br>
+            <input type="checkbox" name="art" id="art4" value="4">Libros <br>
+            <input type="checkbox" name="art" id="art5" value="5">Ciencia <br><br>
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+
+            <legend>Datos sobre la revista</legend><br>
+
+            <label for="frec">Frecuencia con la que se recibirá la revista: </label><br>
+            <select name="frec" id="frec">
+
+                <option value="sem">Semanal</option>
+                <option value="men">Mensual</option>
+                <option value="anu">Anoal</option>
+
+            </select><br><br>
+
+            <p>Puedes mandar tu artículo sobre cualquier tema de los que tratamos. Nosotros lo valoraremos para que pueda ser publicado</p>
+            
+            <br>
+
+            <label for="up">Mandar artículo: </label>
+            <input type="file" name="up" id="up"><br><br>
+
+            <p>Si desea mandar simplemente una opinión o comentario escríbalo aquí: </p><br>
+            
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Introduzca su comentario..."></textarea><br><br>
+            
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+
+            <legend>Comenzar de nuevo</legend><br>
+
+            <label for="reset">Borrar todos los datos del formulario y volver a empezar: </label>
+            <input type="reset" name="reset" id="reset" value="Reset"> <br><br>
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+
+            <legend>Enviar</legend><br>
+
+            <label for="send">Enviar formulario por correo electrónico</label><br>
+            <input type="submit" name="send" id="send" value="Enviar"><br><br>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
